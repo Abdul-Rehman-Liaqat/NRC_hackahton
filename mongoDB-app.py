@@ -21,6 +21,10 @@ def main():
 def legal():
     return render_template('legal.html')
 
+@app.route('/send_sms/')
+def send_sms():
+    return render_template('send_sms.html')
+
 if __name__ == '__main__':
       app.run(host='0.0.0.0', port=1234,debug=True)
       
